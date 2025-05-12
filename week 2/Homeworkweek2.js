@@ -6,10 +6,10 @@ let numberOfToppings=8;
 console.log(pizzaPlace,typeof pizzaPlace);
 console.log(numberOfToppings, typeof numberOfToppings);
 // 3. print a template literal that uses both variable to construct a short sentence about your pizza place
-console.log("At " + pizzaPlace + " We have " + numberOfToppings + " toppings.");
+console.log(`At ${pizzaPlace} ,  We have  ${numberOfToppings}  toppings.`);
 
 // 4. construct an if statement
-      if (numberOfToppings > 10) {
+      if (numberOfToppings >= 10) {
         console.log("A whole lot of pizza");
 
     }else   {
