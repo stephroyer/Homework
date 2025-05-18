@@ -21,7 +21,7 @@ function getPizzaOrder(size, crust, ...toppings){
 let pizza=['medium', 'thick',['olives', 'grenn peppers', 'onions']];
  let cookedpizza=preparePizza(pizza);
 function preparePizza([size, crust, toppings]){
-    console.log('....cooking pizza....');
+    console.log( 'Coming up!!! ....your pizza is cooking ....');
 
     const Object ={
         size: size,
