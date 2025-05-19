@@ -59,6 +59,28 @@ servePizza("lagre", "thick", "pepperoni, onions")
 
 
 //bonus challenge
+function listToppings(toppings) {
+  const count = toppings.length;
+
+  if (count === 0) {
+    return "";
+  } else if (count === 1) {
+    return toppings[0];
+  } else if (count === 2) {
+    return toppings[0] + " and " + toppings[1];
+  } else {
+    const last1 = toppings.slice(0, -1).join(", ");
+    const last = toppings[toppings.length - 1];
+    return `${last1}, and ${last}`;
+  }
+   
+}console.log("Our toppings are: " + listToppings(pizzaToppings) + ".");
+
+
+
+
+
+
 
 
 
