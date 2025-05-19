@@ -1,15 +1,18 @@
 //Array pf pizzaTopping
-let pizzaToppings =["cheese", "pinapple","pepperoni","onions","chicken"];
 
-//create a greetcustomer function 
-function greetcustomer(){
-    console.log("Welcome to Pizza Housse, our Toppings are:");
-    for (let topping of pizzaToppings){
-        console.log(topping +",");
-    }
-}  greetcustomer()
+const pizzaToppings = ["pepperoni", "mushrooms", "onions", "extra cheese"];
 
-//create a getPizzaOrder function
+// Create greetCustomer function
+function greetCustomer() {
+  console.log("Welcome to Pizza House, our toppings are:");
+  
+  // Loop through pizzaToppings to display each one
+  for (let i = 0; i < pizzaToppings.length; i++) {
+    console.log(pizzaToppings[i] +",");
+  }
+}greetCustomer()
+
+//create  getPizzaOrder function
 let order = getPizzaOrder('large','Thick','pepperoni','omions')
 function getPizzaOrder(size, crust, ...toppings){
   console.log(`one ${size} ${crust} crust pizza with ${toppings} coming up!`);
