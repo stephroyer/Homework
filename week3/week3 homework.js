@@ -4,25 +4,41 @@ const pizzaToppings = ["pepperoni", "mushrooms", "onions", "extra cheese"];
 
 // Create greetCustomer function
 function greetCustomer() {
-  console.log("Welcome to Pizza House, our toppings are:");
+    let toppingsList = '';
   
   // Loop through pizzaToppings to display each one
   for (let i = 0; i < pizzaToppings.length; i++) {
-    console.log(pizzaToppings[i] +",");
+    toppingsList += pizzaToppings[i];
+
+    if(i<pizzaToppings.length -1){
+        toppingsList+= ', ';
+    }
   }
-}greetCustomer()
+  console.log("Welcome to Pizza House, our toppings are:" + toppingsList);
+  
+}
+greetCustomer()
 
 //create  getPizzaOrder function
+let list ='';
 let order = getPizzaOrder('large','Thick','pepperoni','omions')
 function getPizzaOrder(size, crust, ...toppings){
-  console.log(`one ${size} ${crust} crust pizza with ${toppings} coming up!`);
+    for (let i =0;i<toppings.length; i++){
+        list+= toppings[i];
+
+        if(i<toppings.length -1){
+            list+= ', ';
+        }
+    }
+
+  console.log(`one ${size} ${crust} crust pizza with ${list} coming up!`);
   return[size, crust, ...toppings];  
 
 }
   
 //create a pizzaprepare function
-let pizza=['medium', 'thick',['olives', 'grenn peppers', 'onions']];
- let cookedpizza=preparePizza(pizza);
+let pizzalist=['medium', 'thick',['olives', 'grenn peppers', 'onions']];
+ let cookedpizza=preparePizza(pizzalist);
 function preparePizza([size, crust, toppings]){
     console.log( 'Coming up!!! ....your pizza is cooking ....');
 
@@ -37,8 +53,18 @@ function preparePizza([size, crust, toppings]){
 
 //create a servePizza function
 
-function servePizza(size, crust, ...toppings){
-    console.log(`order oup! here's your ${size} ${crust} crust pizza with ${toppings}. Enjoy!`);
+function servePizza(pizza){
+
+    let toppingsListserve= '';
+    for (let i = 0; i < pizza.toppings.length; i++) {
+    toppingsListserve += pizza.toppings[i];
+
+    if(i < pizza.toppings.length -1){
+        toppingsListserve += ', ';
+    }
+}
+    
+    console.log(`order oup! here's your ${pizza.size} ${pizza.crust} crust pizza with ${toppingsListserve}. Enjoy!`);
 
 }
 
@@ -48,12 +74,7 @@ function servePizza(size, crust, ...toppings){
         toppings: ['pepperoni', 'onions', 'olives']
     };
 
-
-
-
-console.log(order);
-
-servePizza("lagre", "thick", "pepperoni, onions")
+        servePizza(mypizza);
 
 
 
