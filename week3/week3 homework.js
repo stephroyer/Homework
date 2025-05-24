@@ -7,22 +7,21 @@ function greetCustomer() {
     let toppingsList = '';
   
   // Loop through pizzaToppings to display each one
-  for (let i = 0; i < pizzaToppings.length; i++) {
-    toppingsList += pizzaToppings[i];
-
-    if(i<pizzaToppings.length -1){
-        toppingsList+= ', ';
-    }
+  for (let topping of pizzaToppings){
+    toppingsList +=topping+ ', ';
   }
+  toppingsList = toppingsList.slice(0, -2)
+  
   console.log("Welcome to Pizza House, our toppings are:" + toppingsList);
   
 }
 greetCustomer()
 
 //create  getPizzaOrder function
-let list ='';
-let order = getPizzaOrder('large','Thick','pepperoni','omions')
+  let order = getPizzaOrder('large','Thick','pepperoni','omions')
+  let cookedpizza = preparePizza(order)
 function getPizzaOrder(size, crust, ...toppings){
+    let list ='';//define list inside the fuction
     for (let i =0;i<toppings.length; i++){
         list+= toppings[i];
 
@@ -38,7 +37,7 @@ function getPizzaOrder(size, crust, ...toppings){
   
 //create a pizzaprepare function
 let pizzalist=['medium', 'thick',['olives', 'grenn peppers', 'onions']];
- let cookedpizza=preparePizza(pizzalist);
+
 function preparePizza([size, crust, toppings]){
     console.log( 'Coming up!!! ....your pizza is cooking ....');
 
@@ -68,13 +67,7 @@ function servePizza(pizza){
 
 }
 
- const mypizza  ={
-        size: 'large',
-        crust: 'thick',
-        toppings: ['pepperoni', 'onions', 'olives']
-    };
-
-        servePizza(mypizza);
+       servePizza(cookedpizza);
 
 
 
@@ -95,7 +88,9 @@ function listToppings(toppings) {
     return `${last1}, and ${last}`;
   }
    
-}console.log("Our toppings are: " + listToppings(pizzaToppings) + ".");
+}
+
+  console.log("Our toppings are: " + listToppings(pizzaToppings) + ".");
 
 
 
