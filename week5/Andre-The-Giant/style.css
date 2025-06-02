@@ -1,0 +1,131 @@
+html {
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+body {
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+h1 {
+  font-size: 40px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#top{
+  text-align: center;
+}
+
+
+div {
+  border: 2px solid burlywood;
+  margin: 10px;
+  padding: 10px;
+}
+
+#introPic {
+  float: center ;
+  width: 50%;
+  height: 50%;
+  margin-right: 50px;
+  margin-left: 50PX;
+
+}
+
+#about-me {
+  float: right;
+  width: 50%;
+}
+
+#about-me>li {
+  padding: 2px;
+  text-align: left;
+}
+
+#pro {
+  width: auto;
+}
+
+
+/* Media Query for iPhone 6/7/8 */
+@media screen and (max-width: 375px) {
+
+  body {
+    background-color: blue;
+  }
+}
+
+
+/* Clearfix if floats are still being used */
+/* .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+#stuff{
+  text-align: center;
+}
+#earlyCareer{
+  text-align: center;
+}
+
+a {
+  color: darkblue;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+#intropic,
+#about-me{
+  float: none;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#about-me > li{
+  padding: 4px;
+  text-align: center;
+}
+div {
+  margin: 5px;
+  padding: 5px;
+}
+h1 {
+  font-size: 36px;
+}
+
+a {
+  display: inline-block;
+  margin: 5px 0;
+}
+.section {
+  margin: 20px auto;
+  width: 80%;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+
