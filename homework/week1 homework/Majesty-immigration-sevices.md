@@ -1,6 +1,6 @@
 # Majesty immigration services
 #  Definition Statement
-My application allows users to easily schedule appointments for immigration-related services such as TPS (Temporary Protected Status), EAD (Employment Authorization Document), asylum applications, and more. The platform will streamline the process of accessing services by offering clear guidance, availability schedules, and relevant documentation.
+My application  allows users to easily schedule appointments for immigration-related services such as TPS (Temporary Protected Status), EAD (Employment Authorization Document), asylum applications, and more. The platform will streamline the process of accessing services by offering clear guidance, availability schedules, and relevant documentation.
 
 #  Define My Audience
 **Who is using my application?**
@@ -87,11 +87,12 @@ To provide a centralized, easy-to-use platform for individuals to book immigrati
 - Emphasis on free public services
 
 # Wireframes (5 pages)
-Images of all the pages at the folder with a file.
+Images of all the pages at the folder
 - Home
 - About Us
 - Services
 - Schedule Appointment
 - Contact Us
-
+# SWOT Analysis
+visite the swot.md to see the swot Analysis
 
