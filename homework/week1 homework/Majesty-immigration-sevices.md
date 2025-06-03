@@ -1,6 +1,6 @@
 # Majesty immigration services
 #  Definition Statement
-I want to build an application that allows users to easily schedule appointments for immigration-related services such as TPS (Temporary Protected Status), EAD (Employment Authorization Document), asylum applications, and more. The platform will streamline the process of accessing services by offering clear guidance, availability schedules, and relevant documentation.
+My application allows users to easily schedule appointments for immigration-related services such as TPS (Temporary Protected Status), EAD (Employment Authorization Document), asylum applications, and more. The platform will streamline the process of accessing services by offering clear guidance, availability schedules, and relevant documentation.
 
 #  Define My Audience
 **Who is using my application?**
@@ -56,14 +56,14 @@ To provide a centralized, easy-to-use platform for individuals to book immigrati
 - Helps reduce wait times and missed appointments
 
 # Website Attributes
-- **Color Palette**: Blue (trust), White (clarity), Green (progress)
+- **Color Palette**: Blue (trust), White (clarity), red (progress)
 - **Images**: Diverse people, supportive visuals, flags, forms
 - **Fonts**: Sans-serif (e.g., Open Sans, Lato) for readability
 - **Logos**: Custom simple icon representing global support / immigration
 - **Navigation**: Top menu with dropdowns for Services, Appointments, Help
 
 #  User Story Map (Mural Link)
-   https://app.mural.co/t/finalworkbootcamp5956/m/finalworkbootcamp5956/1748371071105/bc7550af312d388c198705bed39f50612e1366eb
+  https://app.mural.co/t/finalworkbootcamp5956/m/finalworkbootcamp5956/1748371071105/bc7550af312d388c198705bed39f50612e1366eb
 
 # Applications Researched
 
@@ -86,8 +86,8 @@ To provide a centralized, easy-to-use platform for individuals to book immigrati
 - Modern UX with multilingual support
 - Emphasis on free public services
 
-# Wireframes (Minimum 4-5 pages)
-Images of all the pages at the folder
+# Wireframes (5 pages)
+Images of all the pages at the folder with a file.
 - Home
 - About Us
 - Services
