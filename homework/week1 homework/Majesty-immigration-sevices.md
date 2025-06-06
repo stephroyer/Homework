@@ -84,7 +84,7 @@ To provide a centralized, easy-to-use platform for individuals to book immigrati
 - Direct appointment booking system
 - Personalized dashboard
 - Modern UX with multilingual support
-- Emphasis on free public services
+- Emphasis on free public services.
 
 # Wireframes (5 pages)
 Images of all the pages at the folder
