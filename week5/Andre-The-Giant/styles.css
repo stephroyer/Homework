@@ -3,17 +3,14 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
   text-align: center;
   font-size: 18px;
-}
-#top,
-#about-me,
-#Stuff,
-#earlyLife,
-#earlyCareer,
-#proCareer {
-  width: 100%;
-  max-width: 800px;
   padding: 20px;
   box-sizing: border-box;
 }
